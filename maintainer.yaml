@@ -1,0 +1,13 @@
+version: '1.0.0'
+services:
+  mysql_con:
+    container_name: mysql_node_connection
+    environment: 
+      - MAINTAINER=ruhul@ba-systems.com
+      - DB_HOST=
+      - DB_USER=
+      - DB_PASS=
+      - DB_NAME=
+      - DB_PORT=
+    build:
+      dockerfile: mncon_dockerfile
